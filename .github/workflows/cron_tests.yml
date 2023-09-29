@@ -26,6 +26,7 @@ jobs:
     uses: oblakstudio/public-workflows/.github/workflows/ddev-test_addon.yaml@v1
     secrets: inherit
     with:
+      os: '["ubuntu-latest"]'
       ddev_version: '["stable", "HEAD", "edge"]'
       test_type: "release"
   keep-the-job-alive:
